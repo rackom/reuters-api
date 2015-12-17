@@ -50,7 +50,12 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25.1)
+    mini_portile2 (2.0.0)
     multi_json (1.11.2)
+    nokogiri (1.6.7.1)
+      mini_portile2 (~> 2.0.0.rc2)
+    nokogiri (1.6.7.1-x64-mingw32)
+      mini_portile2 (~> 2.0.0.rc2)
     polyglot (0.3.5)
     rack (1.4.7)
     rack-cache (1.5.1)
@@ -104,6 +109,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
   jquery-rails
+  nokogiri
   rails (~> 3.2.22)
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)

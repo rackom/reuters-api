@@ -257,3 +257,29 @@ Started GET "/reuters/find.xml?name=AAPL" for 127.0.0.1 at 2015-12-17 12:09:30 +
 Processing by ReutersController#find as XML
   Parameters: {"name"=>"AAPL"}
 Completed 200 OK in 0.4ms (Views: 0.1ms)
+
+
+Started GET "/reuters/find.xml?name=AAPL" for 127.0.0.1 at 2015-12-17 12:19:28 +0100
+Processing by ReutersController#find as XML
+  Parameters: {"name"=>"AAPL"}
+Completed 500 Internal Server Error in 63.4ms
+
+RuntimeError (redirection forbidden: http://en.wikipedia.org/ -> https://en.wikipedia.org/):
+  app/controllers/reuters_controller.rb:8:in `find'
+
+
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.4ms)
+
+
+Started GET "/reuters/find.xml?name=AAPL" for 127.0.0.1 at 2015-12-17 12:20:09 +0100
+Processing by ReutersController#find as XML
+  Parameters: {"name"=>"AAPL"}
+Completed 200 OK in 425.7ms (Views: 3.3ms)
+
+
+Started GET "/reuters/find.xml?name=IBM" for 127.0.0.1 at 2015-12-17 12:22:48 +0100
+Processing by ReutersController#find as XML
+  Parameters: {"name"=>"IBM"}
+Completed 200 OK in 1305.0ms (Views: 0.5ms)
