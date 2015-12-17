@@ -283,3 +283,69 @@ Started GET "/reuters/find.xml?name=IBM" for 127.0.0.1 at 2015-12-17 12:22:48 +0
 Processing by ReutersController#find as XML
   Parameters: {"name"=>"IBM"}
 Completed 200 OK in 1305.0ms (Views: 0.5ms)
+
+
+Started GET "/reuters/overall_ratios?name=IBM" for 127.0.0.1 at 2015-12-17 13:52:02 +0100
+Processing by ReutersController#overall_ratios as HTML
+  Parameters: {"name"=>"IBM"}
+Completed 406 Not Acceptable in 4102.3ms
+
+
+Started GET "/reuters/overall_ratios.xml?name=IBM" for 127.0.0.1 at 2015-12-17 13:52:23 +0100
+Processing by ReutersController#overall_ratios as XML
+  Parameters: {"name"=>"IBM"}
+Completed 200 OK in 404.0ms (Views: 1.2ms)
+
+
+Started GET "/reuters/earnings.xml?name=IBM" for 127.0.0.1 at 2015-12-17 13:52:44 +0100
+Processing by ReutersController#earnings as XML
+  Parameters: {"name"=>"IBM"}
+Completed 200 OK in 638.2ms (Views: 0.7ms)
+
+
+Started GET "/reuters/earnings.xml?name=IBM" for 127.0.0.1 at 2015-12-17 13:53:00 +0100
+Processing by ReutersController#earnings as XML
+  Parameters: {"name"=>"IBM"}
+Completed 200 OK in 349.3ms (Views: 0.5ms)
+
+
+Started GET "/reuters/earnings.xml?name=IBM" for 127.0.0.1 at 2015-12-17 14:02:35 +0100
+Processing by ReutersController#earnings as XML
+  Parameters: {"name"=>"IBM"}
+Completed 200 OK in 565.6ms (Views: 0.1ms)
+
+
+Started GET "/reuters/earnings.xml?name=IBM" for 127.0.0.1 at 2015-12-17 14:02:44 +0100
+Processing by ReutersController#earnings as XML
+  Parameters: {"name"=>"IBM"}
+Completed 200 OK in 343.6ms (Views: 0.1ms)
+
+
+Started GET "/reuters/competitors.xml?name=IBM" for 127.0.0.1 at 2015-12-17 14:54:12 +0100
+Processing by ReutersController#competitors as XML
+  Parameters: {"name"=>"IBM"}
+Completed 200 OK in 592.1ms (Views: 0.2ms)
+
+
+Started GET "/reuters/competitors.xml?name=IBM" for 127.0.0.1 at 2015-12-17 14:54:24 +0100
+Processing by ReutersController#competitors as XML
+  Parameters: {"name"=>"IBM"}
+Completed 200 OK in 340.4ms (Views: 0.1ms)
+
+
+Started GET "/reuters/competitors.xml?name=IBM" for 127.0.0.1 at 2015-12-17 14:54:29 +0100
+Processing by ReutersController#competitors as XML
+  Parameters: {"name"=>"IBM"}
+Completed 200 OK in 443.1ms (Views: 0.1ms)
+
+
+Started GET "/reuters/competitors.xml?name=IBM" for 127.0.0.1 at 2015-12-17 14:55:04 +0100
+Processing by ReutersController#competitors as XML
+  Parameters: {"name"=>"IBM"}
+Completed 200 OK in 447.4ms (Views: 0.2ms)
+
+
+Started GET "/reuters/competitors.xml?name=IBM" for 127.0.0.1 at 2015-12-17 14:55:09 +0100
+Processing by ReutersController#competitors as XML
+  Parameters: {"name"=>"IBM"}
+Completed 200 OK in 344.7ms (Views: 0.2ms)
