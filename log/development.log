@@ -85,3 +85,175 @@ Started GET "/reuters/find.xml?name=AAPL" for 127.0.0.1 at 2015-12-17 12:01:47 +
 Processing by ReutersController#find as XML
   Parameters: {"name"=>"AAPL"}
 Completed 200 OK in 0.4ms (Views: 0.1ms)
+
+
+Started GET "/reuters/find.xml?name=AAPL" for 127.0.0.1 at 2015-12-17 12:04:45 +0100
+Processing by ReutersController#find as XML
+  Parameters: {"name"=>"AAPL"}
+Completed 200 OK in 0.5ms (Views: 0.1ms)
+
+
+Started GET "/reuters_find.xml?name=AAPL" for 127.0.0.1 at 2015-12-17 12:05:34 +0100
+
+ActionController::RoutingError (No route matches [GET] "/reuters_find.xml"):
+  actionpack (3.2.22) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.22) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.22) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.22) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.22) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.22) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/static.rb:83:in `call'
+  railties (3.2.22) lib/rails/engine.rb:484:in `call'
+  railties (3.2.22) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.22) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/rackom/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/rackom/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/rackom/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/reuters_find?name=AAPL.xml" for 127.0.0.1 at 2015-12-17 12:05:40 +0100
+
+ActionController::RoutingError (No route matches [GET] "/reuters_find"):
+  actionpack (3.2.22) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.22) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.22) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.22) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.22) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.22) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/static.rb:83:in `call'
+  railties (3.2.22) lib/rails/engine.rb:484:in `call'
+  railties (3.2.22) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.22) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/rackom/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/rackom/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/rackom/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/reuters_find?name=AAPL" for 127.0.0.1 at 2015-12-17 12:05:44 +0100
+
+ActionController::RoutingError (No route matches [GET] "/reuters_find"):
+  actionpack (3.2.22) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.22) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.22) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.22) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.22) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.22) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/static.rb:83:in `call'
+  railties (3.2.22) lib/rails/engine.rb:484:in `call'
+  railties (3.2.22) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.22) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/rackom/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/rackom/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/rackom/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/reuters_find" for 127.0.0.1 at 2015-12-17 12:05:56 +0100
+
+ActionController::RoutingError (No route matches [GET] "/reuters_find"):
+  actionpack (3.2.22) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.22) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.22) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.22) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.22) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.22) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/static.rb:83:in `call'
+  railties (3.2.22) lib/rails/engine.rb:484:in `call'
+  railties (3.2.22) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.22) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/rackom/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/rackom/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/rackom/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/reuters/find?name=AAPL" for 127.0.0.1 at 2015-12-17 12:07:34 +0100
+Processing by ReutersController#find as HTML
+  Parameters: {"name"=>"AAPL"}
+Completed 406 Not Acceptable in 0.3ms
+
+
+Started GET "/reuters/find.xml?name=AAPL" for 127.0.0.1 at 2015-12-17 12:07:55 +0100
+Processing by ReutersController#find as XML
+  Parameters: {"name"=>"AAPL"}
+Completed 200 OK in 0.3ms (Views: 0.1ms)
+
+
+Started GET "/reuters/find?name=AAPL" for 127.0.0.1 at 2015-12-17 12:09:13 +0100
+Processing by ReutersController#find as HTML
+  Parameters: {"name"=>"AAPL"}
+Completed 500 Internal Server Error in 8.2ms
+
+ActionView::MissingTemplate (Missing template reuters/find, application/find with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/rackom/Downloads/reuters-api/app/views"
+):
+  app/controllers/reuters_controller.rb:7:in `block (2 levels) in find'
+  app/controllers/reuters_controller.rb:6:in `find'
+
+
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.2ms)
+
+
+Started GET "/reuters/find.html?name=AAPL" for 127.0.0.1 at 2015-12-17 12:09:17 +0100
+Processing by ReutersController#find as HTML
+  Parameters: {"name"=>"AAPL"}
+Completed 500 Internal Server Error in 1.2ms
+
+ActionView::MissingTemplate (Missing template reuters/find, application/find with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/rackom/Downloads/reuters-api/app/views"
+):
+  app/controllers/reuters_controller.rb:7:in `block (2 levels) in find'
+  app/controllers/reuters_controller.rb:6:in `find'
+
+
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/reuters/find.xml?name=AAPL" for 127.0.0.1 at 2015-12-17 12:09:23 +0100
+Processing by ReutersController#find as XML
+  Parameters: {"name"=>"AAPL"}
+Completed 406 Not Acceptable in 0.2ms
+
+
+Started GET "/reuters/find.xml?name=AAPL" for 127.0.0.1 at 2015-12-17 12:09:30 +0100
+Processing by ReutersController#find as XML
+  Parameters: {"name"=>"AAPL"}
+Completed 200 OK in 0.4ms (Views: 0.1ms)
