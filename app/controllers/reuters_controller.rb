@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'nokogiri'
 require 'open-uri'
-require 'AlchemyAPI'
+require Rails.root.join('lib', 'alchemyapi.rb')
 
 class ReutersController < ApplicationController
 # list all

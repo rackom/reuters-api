@@ -994,3 +994,131 @@ Served asset /application.js - 304 Not Modified (0ms)
 
 Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-18 12:12:13 +0100
 Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/reuters/test?name=IBM" for 127.0.0.1 at 2015-12-18 12:54:02 +0100
+Processing by ReutersController#test as HTML
+  Parameters: {"name"=>"IBM"}
+  Rendered reuters/test.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 2428.7ms (Views: 27.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-18 12:58:46 +0100
+Processing by SayController#hello as HTML
+  Rendered say/hello.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 8.7ms (Views: 7.8ms)
+
+
+Started GET "/reuters/test?name=IBM" for 127.0.0.1 at 2015-12-18 12:58:48 +0100
+Processing by ReutersController#test as HTML
+  Parameters: {"name"=>"IBM"}
+  Rendered reuters/test.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1449.3ms (Views: 5.8ms)
+
+
+Started GET "/reuters/test?name=IBM" for 127.0.0.1 at 2015-12-18 12:59:00 +0100
+Processing by ReutersController#test as HTML
+  Parameters: {"name"=>"IBM"}
+Completed 500 Internal Server Error in 789.1ms
+
+NameError (uninitialized constant ReutersController::AlchemyAPI):
+  app/controllers/reuters_controller.rb:51:in `test'
+
+
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.4ms)
+
+
+Started GET "/reuters/test?name=IBM" for 127.0.0.1 at 2015-12-18 13:01:49 +0100
+Processing by ReutersController#test as HTML
+  Parameters: {"name"=>"IBM"}
+Completed 500 Internal Server Error in 690.1ms
+
+NameError (uninitialized constant ReutersController::AlchemyAPI):
+  app/controllers/reuters_controller.rb:51:in `test'
+
+
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.4ms)
+
+
+Started GET "/reuters/test?name=IBM" for 127.0.0.1 at 2015-12-18 13:02:02 +0100
+Processing by ReutersController#test as HTML
+  Parameters: {"name"=>"IBM"}
+  Rendered reuters/test.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 1270.3ms (Views: 26.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-18 13:02:04 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/reuters.js?body=1" for 127.0.0.1 at 2015-12-18 13:02:04 +0100
+Served asset /reuters.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-18 13:02:04 +0100
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-18 13:02:04 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/reuters/test?name=IBM" for 127.0.0.1 at 2015-12-18 13:09:07 +0100
+Processing by ReutersController#test as HTML
+  Parameters: {"name"=>"IBM"}
+  Rendered reuters/test.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 1358.0ms (Views: 30.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-18 13:09:08 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/reuters.js?body=1" for 127.0.0.1 at 2015-12-18 13:09:09 +0100
+Served asset /reuters.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-18 13:09:09 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-18 13:09:09 +0100
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/reuters/test?name=IBM" for 127.0.0.1 at 2015-12-18 13:10:48 +0100
+
+LoadError (cannot load such file -- /lib/alchemyapi.rb):
+  app/controllers/reuters_controller.rb:4:in `<top (required)>'
+
+
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.0ms)
+
+
+Started GET "/reuters/test?name=IBM" for 127.0.0.1 at 2015-12-18 13:12:15 +0100
+Processing by ReutersController#test as HTML
+  Parameters: {"name"=>"IBM"}
+  Rendered reuters/test.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 1989.8ms (Views: 28.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-18 13:12:17 +0100
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/reuters.js?body=1" for 127.0.0.1 at 2015-12-18 13:12:17 +0100
+Served asset /reuters.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-18 13:12:17 +0100
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-18 13:12:17 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
