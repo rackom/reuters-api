@@ -349,3 +349,648 @@ Started GET "/reuters/competitors.xml?name=IBM" for 127.0.0.1 at 2015-12-17 14:5
 Processing by ReutersController#competitors as XML
   Parameters: {"name"=>"IBM"}
 Completed 200 OK in 344.7ms (Views: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-18 11:14:23 +0100
+Processing by SayController#hello as HTML
+  Rendered say/hello.html.erb within layouts/application (1.2ms)
+Compiled reuters.js  (502ms)  (pid 7646)
+Compiled application.js  (508ms)  (pid 7646)
+Completed 200 OK in 546.9ms (Views: 545.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-18 11:14:24 +0100
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/reuters.js?body=1" for 127.0.0.1 at 2015-12-18 11:14:24 +0100
+Served asset /reuters.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-18 11:14:24 +0100
+Served asset /application.js - 200 OK (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-18 11:14:24 +0100
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/newapp-icon.png" for 127.0.0.1 at 2015-12-18 11:14:24 +0100
+Served asset /newapp-icon.png - 200 OK (1ms)
+
+
+Started GET "/reuters/find.json" for 127.0.0.1 at 2015-12-18 11:14:25 +0100
+
+LoadError (cannot load such file -- ./alchemyapi.rb):
+  app/controllers/reuters_controller.rb:4:in `<top (required)>'
+
+
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.6ms)
+
+
+Started GET "/reuters/find.json" for 127.0.0.1 at 2015-12-18 11:16:34 +0100
+
+AbstractController::ActionNotFound (The action 'find' could not be found for ReutersController):
+  actionpack (3.2.22) lib/abstract_controller/base.rb:116:in `process'
+  actionpack (3.2.22) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.22) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.22) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.22) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.22) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.22) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.22) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.22) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.7) lib/rack/etag.rb:23:in `call'
+  rack (1.4.7) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.7) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.7) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.22) lib/active_support/callbacks.rb:405:in `_run__4365342780757090972__call__2074859840428225406__callbacks'
+  activesupport (3.2.22) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.22) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.22) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.22) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.22) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.22) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.22) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.22) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.22) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/static.rb:83:in `call'
+  railties (3.2.22) lib/rails/engine.rb:484:in `call'
+  railties (3.2.22) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.22) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/rackom/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/rackom/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/rackom/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.7ms)
+
+
+Started GET "/reuters/test.json" for 127.0.0.1 at 2015-12-18 11:16:41 +0100
+Processing by ReutersController#test as JSON
+Completed 500 Internal Server Error in 397.5ms
+
+ActionView::MissingTemplate (Missing template reuters/test, application/test with {:locale=>[:en], :formats=>[:json], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/rackom/Downloads/reuters-api/app/views"
+):
+  actionpack (3.2.22) lib/action_view/path_set.rb:58:in `find'
+  actionpack (3.2.22) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (3.2.22) lib/action_view/renderer/abstract_renderer.rb:3:in `find_template'
+  actionpack (3.2.22) lib/action_view/renderer/template_renderer.rb:34:in `determine_template'
+  actionpack (3.2.22) lib/action_view/renderer/template_renderer.rb:10:in `render'
+  actionpack (3.2.22) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.22) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.22) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.22) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.22) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.22) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.22) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.22) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.22) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.22) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.22) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/rackom/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (3.2.22) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.22) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.22) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  actionpack (3.2.22) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.22) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.22) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.22) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.22) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.22) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.22) lib/active_support/callbacks.rb:414:in `_run__3437956240699482527__process_action__1722722184011545041__callbacks'
+  activesupport (3.2.22) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.22) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.22) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.22) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.22) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.22) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.22) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.22) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.22) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.22) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.22) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  actionpack (3.2.22) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.22) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.22) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.22) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.22) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.22) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.22) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.22) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.22) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.7) lib/rack/etag.rb:23:in `call'
+  rack (1.4.7) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.7) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.7) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.22) lib/active_support/callbacks.rb:405:in `_run__4365342780757090972__call__2074859840428225406__callbacks'
+  activesupport (3.2.22) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.22) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.22) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.22) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.22) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.22) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.22) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.22) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.22) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/static.rb:83:in `call'
+  railties (3.2.22) lib/rails/engine.rb:484:in `call'
+  railties (3.2.22) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.22) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/rackom/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/rackom/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/rackom/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/reuters/test.json" for 127.0.0.1 at 2015-12-18 11:16:52 +0100
+Processing by ReutersController#test as JSON
+Completed 406 Not Acceptable in 365.6ms
+
+
+Started GET "/reuters/test.json" for 127.0.0.1 at 2015-12-18 11:16:56 +0100
+Processing by ReutersController#test as JSON
+Completed 406 Not Acceptable in 380.0ms
+
+
+Started GET "/reuters/test.xml" for 127.0.0.1 at 2015-12-18 11:16:57 +0100
+Processing by ReutersController#test as XML
+Completed 200 OK in 562.5ms (Views: 0.1ms)
+
+
+Started GET "/reuters/test.xml" for 127.0.0.1 at 2015-12-18 11:17:10 +0100
+Processing by ReutersController#test as XML
+Completed 200 OK in 420.9ms (Views: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-18 11:35:58 +0100
+Processing by SayController#hello as HTML
+  Rendered say/hello.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22.5ms (Views: 21.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-18 11:35:58 +0100
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-18 11:35:58 +0100
+Served asset /application.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-18 11:35:58 +0100
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/reuters/find.json" for 127.0.0.1 at 2015-12-18 11:36:01 +0100
+
+AbstractController::ActionNotFound (The action 'find' could not be found for ReutersController):
+  actionpack (3.2.22) lib/abstract_controller/base.rb:116:in `process'
+  actionpack (3.2.22) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.22) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.22) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.22) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.22) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.22) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.22) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.22) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.7) lib/rack/etag.rb:23:in `call'
+  rack (1.4.7) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.7) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.7) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.22) lib/active_support/callbacks.rb:405:in `_run__4365342780757090972__call__2074859840428225406__callbacks'
+  activesupport (3.2.22) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.22) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.22) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.22) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.22) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.22) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.22) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.22) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.22) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/static.rb:83:in `call'
+  railties (3.2.22) lib/rails/engine.rb:484:in `call'
+  railties (3.2.22) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.22) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/rackom/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/rackom/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/rackom/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started GET "/reuters/test.xml" for 127.0.0.1 at 2015-12-18 11:36:11 +0100
+Processing by ReutersController#test as XML
+Completed 500 Internal Server Error in 1013.3ms
+
+OpenURI::HTTPError (500 Internal Server Error):
+  app/controllers/reuters_controller.rb:40:in `fetch_element_by_css'
+  app/controllers/reuters_controller.rb:56:in `test'
+
+
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.8ms)
+
+
+Started GET "/reuters/test.xml?name=IBM" for 127.0.0.1 at 2015-12-18 11:36:18 +0100
+Processing by ReutersController#test as XML
+  Parameters: {"name"=>"IBM"}
+Completed 500 Internal Server Error in 1051.0ms
+
+TypeError (no implicit conversion of Nokogiri::XML::NodeSet into String):
+  app/controllers/reuters_controller.rb:47:in `+'
+  app/controllers/reuters_controller.rb:47:in `highlight'
+  app/controllers/reuters_controller.rb:58:in `test'
+
+
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.5ms)
+
+
+Started GET "/reuters/test.xml?name=IBM" for 127.0.0.1 at 2015-12-18 11:37:03 +0100
+Processing by ReutersController#test as XML
+  Parameters: {"name"=>"IBM"}
+Completed 200 OK in 616.8ms (Views: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-18 11:37:56 +0100
+Processing by SayController#hello as HTML
+  Rendered say/hello.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 6.3ms (Views: 5.1ms)
+
+
+Started GET "/reuters/" for 127.0.0.1 at 2015-12-18 11:38:01 +0100
+
+AbstractController::ActionNotFound (The action 'index' could not be found for ReutersController):
+  actionpack (3.2.22) lib/abstract_controller/base.rb:116:in `process'
+  actionpack (3.2.22) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.22) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.22) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.22) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.22) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.22) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.22) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.22) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.7) lib/rack/etag.rb:23:in `call'
+  rack (1.4.7) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.7) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.7) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.22) lib/active_support/callbacks.rb:405:in `_run__4365342780757090972__call__2074859840428225406__callbacks'
+  activesupport (3.2.22) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.22) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.22) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.22) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.22) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.22) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.22) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.22) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.22) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/static.rb:83:in `call'
+  railties (3.2.22) lib/rails/engine.rb:484:in `call'
+  railties (3.2.22) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.22) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/rackom/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/rackom/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/rackom/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started GET "/reuters/test.xml?name=IBM" for 127.0.0.1 at 2015-12-18 11:38:02 +0100
+Processing by ReutersController#test as XML
+  Parameters: {"name"=>"IBM"}
+Completed 500 Internal Server Error in 658.8ms
+
+NoMethodError (undefined method `strip' for #<Nokogiri::XML::NodeSet:0x007fcb53cf7b70>):
+  app/controllers/reuters_controller.rb:47:in `highlight'
+  app/controllers/reuters_controller.rb:58:in `test'
+
+
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.5ms)
+
+
+Started GET "/reuters/test.xml?name=IBM" for 127.0.0.1 at 2015-12-18 11:38:15 +0100
+Processing by ReutersController#test as XML
+  Parameters: {"name"=>"IBM"}
+Completed 500 Internal Server Error in 285.1ms
+
+NoMethodError (undefined method `content' for #<Nokogiri::XML::NodeSet:0x007fcb5580f958>):
+  app/controllers/reuters_controller.rb:58:in `test'
+
+
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.3ms)
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.9ms)
+
+
+Started GET "/reuters/test.xml?name=IBM" for 127.0.0.1 at 2015-12-18 11:40:39 +0100
+Processing by ReutersController#test as XML
+  Parameters: {"name"=>"IBM"}
+Completed 500 Internal Server Error in 1291.5ms
+
+NoMethodError (undefined method `strip' for #<Nokogiri::XML::NodeSet:0x007fcb53e10f20>):
+  app/controllers/reuters_controller.rb:47:in `highlight'
+  app/controllers/reuters_controller.rb:58:in `test'
+
+
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.2ms)
+
+
+Started GET "/reuters/test.xml?name=IBM" for 127.0.0.1 at 2015-12-18 11:41:56 +0100
+Processing by ReutersController#test as XML
+  Parameters: {"name"=>"IBM"}
+Completed 200 OK in 1229.8ms (Views: 0.1ms)
+
+
+Started GET "/reuters/test.xml?name=IBM" for 127.0.0.1 at 2015-12-18 11:42:03 +0100
+Processing by ReutersController#test as XML
+  Parameters: {"name"=>"IBM"}
+Completed 200 OK in 325.5ms (Views: 0.1ms)
+
+
+Started GET "/reuters/test.xml?name=IBM" for 127.0.0.1 at 2015-12-18 11:43:07 +0100
+Processing by ReutersController#test as XML
+  Parameters: {"name"=>"IBM"}
+Completed 200 OK in 1302.2ms (Views: 0.1ms)
+
+
+Started GET "/reuters/test.xml?name=IBM" for 127.0.0.1 at 2015-12-18 11:43:11 +0100
+Processing by ReutersController#test as XML
+  Parameters: {"name"=>"IBM"}
+Completed 200 OK in 405.5ms (Views: 0.3ms)
+
+
+Started GET "/reuters/test.xml?name=IBM" for 127.0.0.1 at 2015-12-18 11:43:52 +0100
+Processing by ReutersController#test as XML
+  Parameters: {"name"=>"IBM"}
+Completed 500 Internal Server Error in 420.1ms
+
+NoMethodError (undefined method `gsub' for #<Nokogiri::XML::NodeSet:0x007fcb570a1188>):
+  app/controllers/reuters_controller.rb:61:in `test'
+
+
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.6ms)
+
+
+Started GET "/reuters/test.xml?name=IBM" for 127.0.0.1 at 2015-12-18 11:44:02 +0100
+Processing by ReutersController#test as XML
+  Parameters: {"name"=>"IBM"}
+Completed 200 OK in 377.7ms (Views: 0.1ms)
+
+
+Started GET "/reuters/test.xml?name=IBM" for 127.0.0.1 at 2015-12-18 11:44:06 +0100
+Processing by ReutersController#test as XML
+  Parameters: {"name"=>"IBM"}
+Completed 200 OK in 321.2ms (Views: 0.1ms)
+
+
+Started GET "/reuters/test.xml?name=IBM" for 127.0.0.1 at 2015-12-18 11:44:25 +0100
+Processing by ReutersController#test as XML
+  Parameters: {"name"=>"IBM"}
+Completed 200 OK in 2027.6ms (Views: 0.1ms)
+
+
+Started GET "/reuters/test.xml?name=IBM" for 127.0.0.1 at 2015-12-18 11:45:49 +0100
+Processing by ReutersController#test as XML
+  Parameters: {"name"=>"IBM"}
+Completed 200 OK in 1085.0ms (Views: 0.1ms)
+
+
+Started GET "/reuters/test.xml?name=IBM" for 127.0.0.1 at 2015-12-18 11:47:42 +0100
+Processing by ReutersController#test as XML
+  Parameters: {"name"=>"IBM"}
+Completed 200 OK in 631.1ms (Views: 0.1ms)
+
+
+Started GET "/reuters/test.xml?name=IBM" for 127.0.0.1 at 2015-12-18 11:51:35 +0100
+Processing by ReutersController#test as XML
+  Parameters: {"name"=>"IBM"}
+Completed 200 OK in 1165.8ms (Views: 0.3ms)
+
+
+Started GET "/reuters/test.xml?name=IBM" for 127.0.0.1 at 2015-12-18 11:52:22 +0100
+Processing by ReutersController#test as XML
+  Parameters: {"name"=>"IBM"}
+Completed 200 OK in 614.2ms (Views: 0.1ms)
+
+
+Started GET "/reuters/test.xml?name=IBM" for 127.0.0.1 at 2015-12-18 11:58:34 +0100
+Processing by ReutersController#test as XML
+  Parameters: {"name"=>"IBM"}
+Completed 500 Internal Server Error in 437.1ms
+
+NameError (undefined local variable or method `text' for #<ReutersController:0x007fcb5704b120>):
+  app/controllers/reuters_controller.rb:61:in `test'
+
+
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/rackom/.rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.7ms)
+
+
+Started GET "/reuters/test.xml?name=IBM" for 127.0.0.1 at 2015-12-18 11:58:53 +0100
+Processing by ReutersController#test as XML
+  Parameters: {"name"=>"IBM"}
+Completed 200 OK in 871.6ms (Views: 0.2ms)
+
+
+Started GET "/reuters/test.xml?name=IBM" for 127.0.0.1 at 2015-12-18 11:59:05 +0100
+Processing by ReutersController#test as XML
+  Parameters: {"name"=>"IBM"}
+Completed 200 OK in 1138.8ms (Views: 0.1ms)
+
+
+Started GET "/reuters/test.xml?name=IBM" for 127.0.0.1 at 2015-12-18 12:06:14 +0100
+Processing by ReutersController#test as XML
+  Parameters: {"name"=>"IBM"}
+Completed 200 OK in 2045.8ms (Views: 0.1ms)
+
+
+Started GET "/reuters/test.xml?name=IBM" for 127.0.0.1 at 2015-12-18 12:07:09 +0100
+Processing by ReutersController#test as XML
+  Parameters: {"name"=>"IBM"}
+Completed 200 OK in 1581.7ms (Views: 0.1ms)
+
+
+Started GET "/reuters/test.xml?name=IBM" for 127.0.0.1 at 2015-12-18 12:07:36 +0100
+Processing by ReutersController#test as XML
+  Parameters: {"name"=>"IBM"}
+Completed 200 OK in 2028.4ms (Views: 0.1ms)
+
+
+Started GET "/reuters/test.xml?name=IBM" for 127.0.0.1 at 2015-12-18 12:10:29 +0100
+Processing by ReutersController#test as XML
+  Parameters: {"name"=>"IBM"}
+Completed 200 OK in 2324.1ms (Views: 0.1ms)
+
+
+Started GET "/reuters/test?name=IBM" for 127.0.0.1 at 2015-12-18 12:10:37 +0100
+Processing by ReutersController#test as HTML
+  Parameters: {"name"=>"IBM"}
+Completed 406 Not Acceptable in 819.6ms
+
+
+Started GET "/reuters/test?name=IBM" for 127.0.0.1 at 2015-12-18 12:11:22 +0100
+Processing by ReutersController#test as HTML
+  Parameters: {"name"=>"IBM"}
+  Rendered reuters/test.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4515.7ms (Views: 6.2ms)
+
+
+Started GET "/reuters/test?name=IBM" for 127.0.0.1 at 2015-12-18 12:11:48 +0100
+Processing by ReutersController#test as HTML
+  Parameters: {"name"=>"IBM"}
+  Rendered reuters/test.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 2279.5ms (Views: 16.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-18 12:11:50 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-18 12:11:50 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-18 12:11:50 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reuters.js?body=1" for 127.0.0.1 at 2015-12-18 12:11:50 +0100
+Served asset /reuters.js - 304 Not Modified (5ms)
+
+
+Started GET "/reuters/test?name=IBM" for 127.0.0.1 at 2015-12-18 12:11:57 +0100
+Processing by ReutersController#test as HTML
+  Parameters: {"name"=>"IBM"}
+  Rendered reuters/test.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1162.8ms (Views: 3.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-18 12:11:58 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-18 12:11:58 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-18 12:11:58 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reuters.js?body=1" for 127.0.0.1 at 2015-12-18 12:11:58 +0100
+Served asset /reuters.js - 304 Not Modified (0ms)
+
+
+Started GET "/reuters/test?name=AAPL" for 127.0.0.1 at 2015-12-18 12:12:07 +0100
+Processing by ReutersController#test as HTML
+  Parameters: {"name"=>"AAPL"}
+  Rendered reuters/test.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 6369.7ms (Views: 3.4ms)
+
+
+Started GET "/assets/reuters.js?body=1" for 127.0.0.1 at 2015-12-18 12:12:13 +0100
+Served asset /reuters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-18 12:12:13 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-18 12:12:13 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-18 12:12:13 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
