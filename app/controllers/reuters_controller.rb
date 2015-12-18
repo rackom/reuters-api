@@ -6,33 +6,21 @@ require Rails.root.join('lib', 'alchemyapi.rb')
 class ReutersController < ApplicationController
 # list all
 	def overall_ratios
-		result = fetch_element_by_css("http://uk.reuters.com/business/quotes/overview?symbol=#{params[:name]}", 'div#overallRatios')		
-
-		respond_to do |format|
-			format.xml { render xml: result, status: :ok }
-		end
+		@result = fetch_element_by_css("http://uk.reuters.com/business/quotes/overview?symbol=#{params[:name]}", 'div#overallRatios').to_s
 	end
 
 	def chart
-		result = fetch_element_by_css("http://uk.reuters.com/business/quotes/overview?symbol=#{params[:name]}", 'div#companyOverviewChart')		
-
-		respond_to do |format|
-			format.xml { render xml: result, status: :ok }
-		end
+		@result = fetch_element_by_css("http://uk.reuters.com/business/quotes/overview?symbol=#{params[:name]}", 'div#companyOverviewChart').to_s
 	end
 
 	def competitors
 		tmp = fetch_element_by_css("http://uk.reuters.com/business/quotes/overview?symbol=#{params[:name]}", 'div.module')
 
-		result = ""
+		@esult = ""
 		tmp.each do |node|
 			if node.content.include?('Competitors')
-				result = node
+				@result = node.to_s
 			end
-		end
-
-		respond_to do |format|
-			format.xml { render xml: result, status: :ok }
 		end
 	end	
 
